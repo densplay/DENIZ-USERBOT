@@ -66,11 +66,11 @@ async def redis(pong):
     """ For .ping command, ping the userbot from any chat.  """
     uptime = await get_readable_time((time.time() - StartTime))
     start = datetime.now()
-    await pong.edit("Assalamualaikum..")
+    await pong.edit("🌟DENIZ-USERBOT🌟")
     await asyncio.sleep(1)
     end = datetime.now()
     duration = (end - start).microseconds / 1000
-    await pong.edit(f"**ONLY DENIZ TEST**\n**KEKUATAN PING** : `%sms`\n**DURASI TEST** : `{uptime}🕛`" % (duration))
+    await pong.edit(f"**✨PONG!!🌟🌟**\n**✨Pingger⚡** : `%sms`\n**✨Uptime⚡** : `{uptime}🕛`" % (duration))
 
 
 @register(outgoing=True, pattern="^Ping$")
